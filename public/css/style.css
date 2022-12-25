@@ -43,3 +43,13 @@ figure{
   margin: auto;
   width: 20%;
 }
+.boton-buscar {
+    color: white;
+    background-color: #80007f;
+    padding: 8px;
+    border-radius: 4px;
+}
+.buscar-titulo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

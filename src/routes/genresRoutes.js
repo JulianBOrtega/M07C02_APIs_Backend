@@ -1,10 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const {list, getById, getByName} = require('../controllers/genresController');
+const genresController = require('../controllers/genresController');
 
-router
-    .get('/', list)
-    .get('/name/:name?', getByName)
-    .get('/:id', getById);
+router.get('/genres', genresController.list);
+router.get('/genres/detail/:id', genresController.detail);
+
 
 module.exports = router;
